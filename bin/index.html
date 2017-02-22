@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+ <head>
+ 	<title>About</title>
+	<link rel="stylesheet" href="../css/about.css"/>
+
+ </head>
+
+ <body>
+	 <!-- dropdown menu -->
+	 <div class="Dropdown">
+	  <button onclick="myFunction()" class="dropbtn">Menu</button>
+		<div id="myDropdown" class="dropdown-content">
+	  		<a href="./about.html">About</a>
+	   	<a href="./home.html">Home</a>
+	  		<a href="./resources.html">Resources</a>
+			<a href="./intro.html">Authors</a>
+		</div>
+	</div>
+
+
+ 	<h3 id="Title" text-align="center"> Milennial Lifestyle Design </h3>
+	 	<div class="articlebar">
+		  <h2 class="menuheaders"> Click here for article categories!</h2>
+		  	<div class="ab-content">
+			</div>
+		</div>
+
+	 	<div class="coachingbar">
+		  <h2 class="menuheaders" > Click here to sign up for coaching</h2>
+		  	<div class="cb-content" onclick="coachingLinks()">
+				<a href="./mattcoaching.html">Matt Coaching</a>
+				<a href="./devoncoaching.html">Devon Coaching</a>
+			</div>
+		</div>
+
+	 <div class="sidebar">
+		<h2> Coach Matteo</h2>
+		 <img src="../images/matteoHeadshot.jpg" style="border: 4px groove black; max-width: 70%; max-height: 70%; margin-left: 30px;">
+		<h2> Coach Devon</h2>
+		<img src="../images/devonHeadshot.jpg" style="border: 4px groove black; max-width: 70%; max-height: 70%; margin-left: 30px;">
+	 </div>
+
+	 <div class="middle-box"> </div>
+
+	 <a class="twitter-timeline" href="https://twitter.com/PDUMatteo">Tweets by PDUMatteo</a>
+
+
+	 <form id="submit-form" action="./button_submit.php">
+		 First Name <input type="text" class="form-fields"><br>
+		 Last Name <input type="text" class="form-fields"><br><br>
+		 E-mail Address <input type="text" id="e-mail form">
+		 <input type="button" id="submit" onclick="submit()" value="Submit dis bitch">
+	 </form>
+
+
+	   <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/menu.js"></script> <!-- menu script -->
+ </body>
+</html>
