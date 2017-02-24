@@ -3,58 +3,70 @@
  <head>
  	<title>About</title>
 	<link rel="stylesheet" href="../css/about.css"/>
+	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
  </head>
 
  <body>
 	 <!-- dropdown menu -->
-	 <div class="Dropdown">
-	  <button onclick="myFunction()" class="dropbtn">Menu</button>
-		<div id="myDropdown" class="dropdown-content">
-	  		<a href="./about.html">About</a>
-	   	<a href="./home.html">Home</a>
-	  		<a href="./resources.html">Resources</a>
-			<a href="./intro.html">Authors</a>
-		</div>
+
+
+
+	<div class="jumbotron text-center" style="padding-bottom: auto; padding-top: auto; border: black solid 5px; margin-top: 2px;">
+ 		<h3 id="Title" text-align="center" onclick="changeHeader()" > Millennial Lifestyle Guide </h3>
+			<p> Fit like a Spartan. Smart like an Athenian. Rich like a Corinthian</p>
+			<img src="../images/gerard-butler.jpg" style="border: 4px groove black; max-width: 20%; max-height: 20%; margin: s">
 	</div>
 
-
- 	<h3 id="Title" text-align="center"> Milennial Lifestyle Design </h3>
-	 	<div class="articlebar">
+	 	<div class="articlebar" onclick="articleLinks()">
 		  <h2 class="menuheaders"> Click here for article categories!</h2>
 		  	<div class="ab-content">
 			</div>
 		</div>
 
-	 	<div class="coachingbar">
+	 	<div class="coachingbar" onclick="CoachingLinks()">
 		  <h2 class="menuheaders" > Click here to sign up for coaching</h2>
-		  	<div class="cb-content" onclick="coachingLinks()">
-				<a href="./mattcoaching.html">Matt Coaching</a>
-				<a href="./devoncoaching.html">Devon Coaching</a>
+		  	<div class="cb-content" id="cb-content">
+				<li><a href="./mattcoaching.html">Matt Coaching</a></li>
+				<li><a href="./devoncoaching.html">Devon Coaching</a></li>
 			</div>
 		</div>
 
-	 <div class="sidebar">
-		<h2> Coach Matteo</h2>
-		 <img src="../images/matteoHeadshot.jpg" style="border: 4px groove black; max-width: 70%; max-height: 70%; margin-left: 30px;">
-		<h2> Coach Devon</h2>
-		<img src="../images/devonHeadshot.jpg" style="border: 4px groove black; max-width: 70%; max-height: 70%; margin-left: 30px;">
-	 </div>
+		<div class="Dropdown">
+  	  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  		<div id="myDropdown" class="dropdown-content">
+  	  		<a href="./about.html">About</a>
+  	   	<a href="./home.html">Home</a>
+  	  		<a href="./resources.html">Resources</a>
+  			<a href="./intro.html">Authors</a>
+  		</div>
+  	</div>
 
-	 <div class="middle-box"> </div>
+	<div class="graybox">
+		<div class="sidebar">
+			<h2 style="text-align: center;"> Coach Matteo</h2>
+				<i><a href="./intro.html" style="display: text;"> </a></i>
+			 	<img src="../images/matteoHeadshot.jpg" style="border: 4px groove black; max-width: 70%; max-height: 70%; margin-left: 30px;">
+			<h2 style="text-align: center;"> Coach Devon</h2>
+	     		<img src="../images/devonheadshot.jpg" style="border: 4px groove black; max-width: 70%; max-height: 70%; margin-left: 30px;">
+	 	</div>
+	 	<!---<div class="middle-box" onclick="function(){window.alert(4+5);}">
+			<h2> random tag </h2>
 
-	 <a class="twitter-timeline" href="https://twitter.com/PDUMatteo">Tweets by PDUMatteo</a>
 
-
-	 <form id="submit-form" action="./button_submit.php">
-		 First Name <input type="text" class="form-fields"><br>
-		 Last Name <input type="text" class="form-fields"><br><br>
-		 E-mail Address <input type="text" id="e-mail form">
-		 <input type="button" id="submit" onclick="submit()" value="Submit dis bitch">
-	 </form>
+		</div> -->
+	 	<a class="twitter-timeline" href="https://twitter.com/PDUMatteo">Tweets by PDUMatteo</a>
+	 	<form id="submit-form" action="./button_submit.php">
+		 	First Name <input type="text" class="form-fields"><br>
+		 	Last Name <input type="text" class="form-fields"><br><br>
+		 	E-mail Address <input type="text" id="e-mail form">
+		 	<input type="button" id="submit" onclick="submit()" value="Submit dis bitch">
+	 	</form>
+	</div>
 
 
 	   <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<script type="text/javascript" src="../js/menu.js"></script> <!-- menu script -->
+		<script type="text/javascript" src="../js/menuScripts.js"></script>
  </body>
 </html>
