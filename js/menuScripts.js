@@ -13,4 +13,10 @@ function changeHeader(){
 	else{
 		x.innerHTML = "Millennial Lifestyle Guide";
 	}
+function openLinks(){
+
+	var hi = document.getElementById('devP');
+
+
+	}
 }

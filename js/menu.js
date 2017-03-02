@@ -19,6 +19,7 @@ window.onclick = function(event) {
   }
 }
 
+
 /*window.onclick = function(event) {
 	if (!event.target.matches('.articlebar')) {
 
