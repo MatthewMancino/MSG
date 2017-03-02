@@ -1,72 +1,124 @@
 <!doctype html>
 <html>
- <head>
- 	<title>About</title>
-	<link rel="stylesheet" href="../css/about.css"/>
-	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <head>
+ 	<title>Millennial Lifestyle Guide</title>
+	<link rel="stylesheet" href="../css/index.css"/>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/formsubmission.css"/>
 
- </head>
+  </head>
 
- <body>
-	 <!-- dropdown menu -->
+  <body>
+	  <header>
+	  </header>
 
+	  <!-- Facebook script and div for social media icon -->
+	<div id="fb-root"></div>
+  	<script>(function(d, s, id) {
+    	var js, fjs = d.getElementsByTagName(s)[0];
+    	if (d.getElementById(id)) return;
+    	js = d.createElement(s); js.id = id;
+    	js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    	fjs.parentNode.insertBefore(js, fjs);
+  	}(document, 'script', 'facebook-jssdk'));
+	</script>
 
-
-	<div class="jumbotron text-center" style="padding-bottom: auto; padding-top: auto; border: black solid 5px; margin-top: 2px;">
+	<div class="jumbotron text-center" style="padding-bottom: auto; padding-top: auto;">
  		<h3 id="Title" text-align="center" onclick="changeHeader()" > Millennial Lifestyle Guide </h3>
-			<p> Fit like a Spartan. Smart like an Athenian. Rich like a Corinthian</p>
-			<img src="../images/gerard-butler.jpg" style="border: 4px groove black; max-width: 20%; max-height: 20%; margin: s">
+		<p> Fit like a Spartan. Smart like an Athenian. Rich like a Corinthian</p>
+		<div class="ancient-hold">
+			 <a id="leo" href="./fitness.html"> <img class="img-rounded" class="img-responsive" class="ancients"style="max-width: 15% ;max-height: 15%;" src="../images/Leonidas1.jpg"> </a>
+			 <a id="plato" href="./mental.html"> <img class="img-rounded" class="img-responsive" class="ancients" style="max-width: 15% ;max-height: 15%;" src="../images/plato.jpg"> </a>
+			 <a id="alexander" href="./financial.html"> <img class="img-rounded" class="img-responsive" style="max-width: 15% ;max-height: 15%;" src="../images/alexanderthegreat.jpg"> </a>
+		 </div>
 	</div>
 
-	 	<div class="articlebar" onclick="articleLinks()">
-		  <h2 class="menuheaders"> Click here for article categories!</h2>
-		  	<div class="ab-content">
-			</div>
-		</div>
 
-	 	<div class="coachingbar" onclick="CoachingLinks()">
-		  <h2 class="menuheaders" > Click here to sign up for coaching</h2>
-		  	<div class="cb-content" id="cb-content">
-				<li><a href="./mattcoaching.html">Matt Coaching</a></li>
-				<li><a href="./devoncoaching.html">Devon Coaching</a></li>
-			</div>
-		</div>
+	<div class="articlebar">
+		<h2 class="menuheaders"> Click here for article categories!</h2>
+		 <div id="ablinks" class="ab-content">
+			<a href="./fitness.html">Physical</a>
+ 			<a href="./mental.html">Mental</a>
+ 			<a href="./financial.html">Financial</a>
+ 			<a href="./bio.html">Author Biographies</a>
+		 </div>
+	</div>
+	<div class="coachingbar" onclick="CoachingLinks()">
+		<h2 class="menuheaders" > Click here to sign up for coaching</h2>
+		 <div class="cb-content" id="cb-content">
+			 <li><a href="./mattcoaching.html">Matt Coaching</a></li>
+			 <li><a href="./devoncoaching.html">Devon Coaching</a></li>
+		 </div>
+	</div>
 
-		<div class="Dropdown">
-  	  <button onclick="myFunction()" class="dropbtn">Menu</button>
-  		<div id="myDropdown" class="dropdown-content">
-  	  		<a href="./about.html">About</a>
-  	   	<a href="./home.html">Home</a>
-  	  		<a href="./resources.html">Resources</a>
-  			<a href="./intro.html">Authors</a>
-  		</div>
-  	</div>
-
-	<div class="graybox">
+ 	<!-- <div class="fb-page"
+		data-tabs="timeline"
+		data-href="https://www.facebook.com/MillennialLifestyleGuide/"
+		data-width="300"
+		data-height="800"
+		data-small-header="false"
+		data-adapt-container-width="true"
+		data-show-facepile="false">
+		<blockquote cite="https://www.facebook.com/MillennialLifestyleGuide/" class="fb-xfbml-parse-ignore">
+			<a href="https://www.facebook.com/MillennialLifestyleGuide/">Millennial Lifestyle Guide</a>
+		</blockquote>
+	</div> -->
+	<div class="middle-box">
 		<div class="sidebar">
-			<h2 style="text-align: center;"> Coach Matteo</h2>
-				<i><a href="./intro.html" style="display: text;"> </a></i>
-			 	<img src="../images/matteoHeadshot.jpg" style="border: 4px groove black; max-width: 70%; max-height: 70%; margin-left: 30px;">
-			<h2 style="text-align: center;"> Coach Devon</h2>
-	     		<img src="../images/devonheadshot.jpg" style="border: 4px groove black; max-width: 70%; max-height: 70%; margin-left: 30px;">
-	 	</div>
-	 	<!---<div class="middle-box" onclick="function(){window.alert(4+5);}">
-			<h2> random tag </h2>
+			<h2 style="text-align: center; color: black;"> Coach Matteo</h2>
+				<a href="./mattcoaching.html" class="links"> Biography</a>
+				<a href="./intro.html" class="links"> </a>
+				<img src="../images/matteoHeadshot.jpg" class="headshot" onclick="openLink()">
+			<h2 style="text-align: center; color: black;"> Coach Devon</h2>
+				<img src="../images/devonheadshot.jpg" class="headshot" onclick="openLink()" id="devP">
+		</div>
+		<article>
+			<p class=MsoNormal style='text-indent:.5in; display:inline;'>Let me start with a little blurb
+			about myself. My name is Matthew; but you can call me Matt or Matteo. I was
+			born and raised in the Pittsburgh area, but the things I am passionate about
+			transcend geographic location. I love human development in all areas; whether
+			that means psychological, emotional, or physical growth. I consider myself a
+			conduit of passion and enthusiasm so that other people can learn, grow, and get
+			better at whatever they choose to do because of me. That is my goal: to help people
+			find their purpose, improve their life circumstances, and get the things that
+			they want.</p>
 
+			<p class=Normal style='text-indent:.5in'>For the past 3 and a half years
+			I've been on a search essentially, a search that expanded myself and my
+			horizons, but I also set out to discover more about myself. Mostly I�ve been an
+			introverted person, but I forced myself way out of my comfort zone. I tried
+			talking to more and more people and become more socially oriented. I used to be
+			very shy and introverted in high-school, and yet as someone about to finish their
+			senior year in my undergrad education, I cannot describe the mental/emotional
+			transformation that I, as sure as many others have gone through once trying out
+			new things. Myself, along with many others, have undergone a personal
+			transformation of self-esteem, character, and personality that really can
+			define who you are as a person, friend, worker, and lover.</p>
 
-		</div> -->
-	 	<a class="twitter-timeline" href="https://twitter.com/PDUMatteo">Tweets by PDUMatteo</a>
-	 	<form id="submit-form" action="./button_submit.php">
-		 	First Name <input type="text" class="form-fields"><br>
-		 	Last Name <input type="text" class="form-fields"><br><br>
-		 	E-mail Address <input type="text" id="e-mail form">
-		 	<input type="button" id="submit" onclick="submit()" value="Submit dis bitch">
-	 	</form>
+		</article>
+
 	</div>
 
 
-	   <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		<script type="text/javascript" src="../js/menu.js"></script> <!-- menu script -->
-		<script type="text/javascript" src="../js/menuScripts.js"></script>
- </body>
+	<!-- <a class="twitter-timeline" href="https://twitter.com/PDUMatteo">Tweets by PDUMatteo</a> -->
+	<!-- menu script, twitter widget, and google analytics widget -->
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/index.js"></script> <!-- menu script -->
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-71940175-2', 'auto');
+  		ga('send', 'pageview');
+	</script>
+
+	<footer>
+		<p>Millennial Style Guide was hand-created by yours truly Coach Matteo</p>
+		<p>Questions? Send an e-mail to matteo@millenniallifestyleguide.com</p>
+	</footer>
+  </body>
 </html>

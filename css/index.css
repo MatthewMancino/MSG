@@ -1,12 +1,12 @@
 /* Dropdown Button */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #1041d3;
     color: white;
     padding: 16px;
     font-size: 25px;
-	 height: auto;
-	 width: auto;
 	 display: block;
+	 align-items: center;
+	 margin: 0 auto;
 }
 
 /* Dropdown button on hover & focus */
@@ -16,7 +16,7 @@
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: relative;
+    position: absolute;
     display: inline-block;
 }
 
@@ -44,6 +44,10 @@
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+
+
+
+
 h3#Title {
 	color: ;
 	font-weight: bold;
@@ -51,40 +55,73 @@ h3#Title {
 	float: center;
 	text-align: center;
 }
-
 h2.menuheaders {
 	color: white;
 	font-size: 20px;
 	text-align: center;
 	margin: auto;
 }
-div.articlebar{
+
+
+img.ancients {
+	height: 50px;
+	width: 50px;
+}
+a#leo {
+	display:inline;
+	height: 150px;
+	width: 150px;
+}
+a#plato{
+	display:inline;
+	height: 150px;
+	width: 150px;
+}
+a#alexander{
+	display:inline;
+	height: 150px;
+	width: 150px;
+
+}
+
+/* Links to more of the articles */
+.articlebar{
 	background-color: #5bb8ff;
 	border: 2px solid;
 	padding: 10px;
 	z-index: 5;
+	margin-left: 20px;
+	margin-right: 20px;
 }
-div.graybox{
-	color: gray;
-	display: block;
-}
-div.middle-box{
-	color: red;
-	align-self: auto;
-	display: block;
-	background-color: red;
-	margin-left: 300px;
-}
-div.articlebar:hover, div.articlebar:focus{
+.articlebar:hover, .articlebar:focus{
 	background-color: #4280f4;
 }
+.ab-content {
+	display: none;
+	position: absolute;
+	background-color: #5bb8ff;
+	width: inherit;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 8;
+}
+.ab-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+
+
 div.coachingbar {
-	background-color: #22a6e8;
-	margin-top: 2px;
+	background: linear-gradient(#22a6e8,white);
 	border: 2px solid;
-	padding: 10px;
+	padding: 6px;
 	z-index: 5;
 	float: center;
+	margin-top: 2px;
+	margin-left: 0 auto;
+	margin-right: 200
 }
 div.coachingbar:focus, div.coachingbar:hover{
 	background-color: #1f5ec4;
@@ -99,12 +136,13 @@ div.cb-content{
 
 div.sidebar{
 	background-color: #215fc4;
-	height: 500px;
+	height: 550px;
 	width: 200px;
 	border: 7px solid #4286f4;
 	position: relative;
 	float: right;
 	margin: 10px;
+	margin-top: 20px;
 }
 p.sidebar-txt {
 	color: #ffffff;
@@ -113,19 +151,29 @@ p.sidebar-txt {
 
 }
 
-form#submit-form {
-
-	border: 7px groove #02ffff;
-	width: 300px;
-
+/* Matt and Devon's headshots formatting */
+img.headshot {
+	max-width: 70%;
+	max-height: 70%;
+	margin-left: 30px;
+	border: 5px black solid;
 }
-button#submit{
-	align: center;
+a.links{
+	display: flex;
+	color: white;
+	margin: 5px;
+	margin-left: 40px;
+}
 
+/* center box where article feed and side portraits will be */
+div.middle-box{
+	background-color: #eaf2ff;
+	border: black 3px solid;
+	height: 600px;
+	margin: 20px;
+	width: auto;
 }
-.show {
-	display: none;
-}
+
 
 html {
 	border: 6px solid white;
