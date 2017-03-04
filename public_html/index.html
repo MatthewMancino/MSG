@@ -1,106 +1,88 @@
 <!doctype html>
 <html>
-  <head>
+<head>
  	<title>Millennial Lifestyle Guide</title>
 	<link rel="stylesheet" href="../css/index.css"/>
 	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/formsubmission.css"/>
+	<link rel="stylesheet" href="../css/headerfooter.css"/>
 
-  </head>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      			<a class="navbar-brand" href="#">Millennial Lifestyle Guide</a>
+    			</div>
+    			<ul class="nav navbar-nav">
+      			<li class="active"><a href="#">Home</a></li>
+      			<li><a href="./fitness.html">Fitness</a></li>
+      			<li><a href="./mental.html">Mental</a></li>
+      			<li><a href="./financial.html">Financial</a></li>
+    			</ul>
+  			</div>
+		</nav>
+	</header>
 
-  <body>
-	  <header>
-	  </header>
+	<div class="container-fluid">
+	   <div class="jumbotron text-center">
+ 		   <h3 id="Title" text-align="center" onclick="changeHeader()" > Millennial Lifestyle Guide </h3>
+		   <p> Fit like a Spartan. Smart like an Athenian. Rich like a Corinthian</p>
+	   </div>
+	</div>
 
-	  <!-- Facebook script and div for social media icon -->
-	<div id="fb-root"></div>
-  	<script>(function(d, s, id) {
-    	var js, fjs = d.getElementsByTagName(s)[0];
-    	if (d.getElementById(id)) return;
-    	js = d.createElement(s); js.id = id;
-    	js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-    	fjs.parentNode.insertBefore(js, fjs);
-  	}(document, 'script', 'facebook-jssdk'));
-	</script>
+	<div class="container-fluid">
+	  <div class="row">
+	    <div class="col-sm-8">
+			 <div class="well well-sm" class=>
+		   	<h2> Click here for article categories!</h2>
+			</div>
+			  <div id="ablinks" class="ab-content">
+				<a href="./fitness.html">Physical</a>
+				<a href="./mental.html">Mental</a>
+				<a href="./financial.html">Financial</a>
+				<a href="./bio.html">Author Biographies</a>
+		 	  </div>
+			  <article style="padding: 10px;">
+  				<p class=MsoNormal style='text-indent:.5in; display:inline;'>Let me start with a little blurb
+  				about myself. My name is Matthew; but you can call me Matt or Matteo. I was
+  				born and raised in the Pittsburgh area, but the things I am passionate about
+  				transcend geographic location. I love human development in all areas; whether
+  				that means psychological, emotional, or physical growth. I consider myself a
+  				conduit of passion and enthusiasm so that other people can learn, grow, and get
+  				better at whatever they choose to do because of me. That is my goal: to help people
+  				find their purpose, improve their life circumstances, and get the things that
+  				they want.</p>
 
-	<div class="jumbotron text-center" style="padding-bottom: auto; padding-top: auto;">
- 		<h3 id="Title" text-align="center" onclick="changeHeader()" > Millennial Lifestyle Guide </h3>
-		<p> Fit like a Spartan. Smart like an Athenian. Rich like a Corinthian</p>
-		<div class="ancient-hold">
-			 <a id="leo" href="./fitness.html"> <img class="img-rounded" class="img-responsive" class="ancients"style="max-width: 15% ;max-height: 15%;" src="../images/Leonidas1.jpg"> </a>
-			 <a id="plato" href="./mental.html"> <img class="img-rounded" class="img-responsive" class="ancients" style="max-width: 15% ;max-height: 15%;" src="../images/plato.jpg"> </a>
-			 <a id="alexander" href="./financial.html"> <img class="img-rounded" class="img-responsive" style="max-width: 15% ;max-height: 15%;" src="../images/alexanderthegreat.jpg"> </a>
+  				<p class=Normal style='text-indent:.5in'>For the past 3 and a half years
+  				I've been on a search essentially, a search that expanded myself and my
+  				horizons, but I also set out to discover more about myself. Mostly I�ve been an
+  				introverted person, but I forced myself way out of my comfort zone. I tried
+  				talking to more and more people and become more socially oriented. I used to be
+  				very shy and introverted in high-school, and yet as someone about to finish their
+  				senior year in my undergrad education, I cannot describe the mental/emotional
+  				transformation that I, as sure as many others have gone through once trying out
+  				new things. Myself, along with many others, have undergone a personal
+  				transformation of self-esteem, character, and personality that really can
+  				define who you are as a person, friend, worker, and lover.</p>
+  				</article>
+	    </div>
+		 <div class="col-sm-4" class="sidebar">
+			 <div class="panel panel-default">
+				 <div class="panel-heading"> Get to know us! </div>
+				 <div class="panel-body">
+				  <h2 style="text-align: center; color: black;"> Coach Matteo</h2>
+   			  <img src="../images/matteoHeadshot.jpg" class="headshot" onclick="openLink()">
+   			  <h2 style="text-align: center; color: black;"> Coach Devon</h2>
+   				<img src="../images/devonheadshot.jpg" class="headshot" onclick="openLink()" id="devP">
+				 </div>
+			 </div>
 		 </div>
-	</div>
-
-
-	<div class="articlebar">
-		<h2 class="menuheaders"> Click here for article categories!</h2>
-		 <div id="ablinks" class="ab-content">
-			<a href="./fitness.html">Physical</a>
- 			<a href="./mental.html">Mental</a>
- 			<a href="./financial.html">Financial</a>
- 			<a href="./bio.html">Author Biographies</a>
-		 </div>
-	</div>
-	<div class="coachingbar" onclick="CoachingLinks()">
-		<h2 class="menuheaders" > Click here to sign up for coaching</h2>
-		 <div class="cb-content" id="cb-content">
-			 <li><a href="./mattcoaching.html">Matt Coaching</a></li>
-			 <li><a href="./devoncoaching.html">Devon Coaching</a></li>
-		 </div>
-	</div>
-
- 	<!-- <div class="fb-page"
-		data-tabs="timeline"
-		data-href="https://www.facebook.com/MillennialLifestyleGuide/"
-		data-width="300"
-		data-height="800"
-		data-small-header="false"
-		data-adapt-container-width="true"
-		data-show-facepile="false">
-		<blockquote cite="https://www.facebook.com/MillennialLifestyleGuide/" class="fb-xfbml-parse-ignore">
-			<a href="https://www.facebook.com/MillennialLifestyleGuide/">Millennial Lifestyle Guide</a>
-		</blockquote>
-	</div> -->
-	<div class="middle-box">
-		<div class="sidebar">
-			<h2 style="text-align: center; color: black;"> Coach Matteo</h2>
-				<a href="./mattcoaching.html" class="links"> Biography</a>
-				<a href="./intro.html" class="links"> </a>
-				<img src="../images/matteoHeadshot.jpg" class="headshot" onclick="openLink()">
-			<h2 style="text-align: center; color: black;"> Coach Devon</h2>
-				<img src="../images/devonheadshot.jpg" class="headshot" onclick="openLink()" id="devP">
-		</div>
-		<article>
-			<p class=MsoNormal style='text-indent:.5in; display:inline;'>Let me start with a little blurb
-			about myself. My name is Matthew; but you can call me Matt or Matteo. I was
-			born and raised in the Pittsburgh area, but the things I am passionate about
-			transcend geographic location. I love human development in all areas; whether
-			that means psychological, emotional, or physical growth. I consider myself a
-			conduit of passion and enthusiasm so that other people can learn, grow, and get
-			better at whatever they choose to do because of me. That is my goal: to help people
-			find their purpose, improve their life circumstances, and get the things that
-			they want.</p>
-
-			<p class=Normal style='text-indent:.5in'>For the past 3 and a half years
-			I've been on a search essentially, a search that expanded myself and my
-			horizons, but I also set out to discover more about myself. Mostly I�ve been an
-			introverted person, but I forced myself way out of my comfort zone. I tried
-			talking to more and more people and become more socially oriented. I used to be
-			very shy and introverted in high-school, and yet as someone about to finish their
-			senior year in my undergrad education, I cannot describe the mental/emotional
-			transformation that I, as sure as many others have gone through once trying out
-			new things. Myself, along with many others, have undergone a personal
-			transformation of self-esteem, character, and personality that really can
-			define who you are as a person, friend, worker, and lover.</p>
-
-		</article>
-
-	</div>
-
+	  </div>
+  </div>
 
 	<!-- <a class="twitter-timeline" href="https://twitter.com/PDUMatteo">Tweets by PDUMatteo</a> -->
 	<!-- menu script, twitter widget, and google analytics widget -->
@@ -116,9 +98,11 @@
   		ga('send', 'pageview');
 	</script>
 
-	<footer>
-		<p>Millennial Style Guide was hand-created by yours truly Coach Matteo</p>
-		<p>Questions? Send an e-mail to matteo@millenniallifestyleguide.com</p>
+	<footer class="footer">
+		<div class="container">
+			<p>Millennial Style Guide was hand-created by yours truly</p>
+			<p>Questions? Send an e-mail to matteo@millenniallifestyleguide.com</p>
+		</div>
 	</footer>
-  </body>
+</body>
 </html>

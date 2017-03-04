@@ -153,9 +153,10 @@ p.sidebar-txt {
 
 /* Matt and Devon's headshots formatting */
 img.headshot {
-	max-width: 70%;
-	max-height: 70%;
-	margin-left: 30px;
+	max-height: 30%;
+	max-width: 30%;
+	margin: auto;
+	display: block;
 	border: 5px black solid;
 }
 a.links{
@@ -164,6 +165,7 @@ a.links{
 	margin: 5px;
 	margin-left: 40px;
 }
+
 
 /* center box where article feed and side portraits will be */
 div.middle-box{
