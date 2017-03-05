@@ -103,6 +103,11 @@ div.middle-box{
 	width: auto;
 }
 
+div.background{
+	background-image: url("/Users/Matteo/Box Sync/MSG/images/Dark_sky_bad_weather.jpg");
+
+
+}
 
 html {
 	border: 6px solid white;
