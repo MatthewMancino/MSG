@@ -12,28 +12,6 @@ h2.menuheaders {
 	margin: auto;
 }
 
-
-img.ancients {
-	height: 50px;
-	width: 50px;
-}
-a#leo {
-	display:inline;
-	height: 150px;
-	width: 150px;
-}
-a#plato{
-	display:inline;
-	height: 150px;
-	width: 150px;
-}
-a#alexander{
-	display:inline;
-	height: 150px;
-	width: 150px;
-
-}
-
 /* Links to more of the articles */
 .articlebar{
 	background-color: #5bb8ff;
@@ -83,7 +61,6 @@ div.cb-content{
 	min-width: 160px;
 
 }
-
 div.sidebar{
 	background-color: #215fc4;
 	height: 550px;
