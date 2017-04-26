@@ -14,9 +14,8 @@
     			</div>
     			<ul class="nav navbar-nav">
       			<li><a style="color:white;" href="./fitness.html">Fitness</a></li>
-      			<li><a style="color:white;" href="./mental.html">Mental</a></li>
+      			<li><a style="color:white;" href="./philosophy.html">Philosophy</a></li>
       			<li><a style="color:white;" href="./financial.html">Financial</a></li>
-					<li><a style="color:white;" href="./mattcoaching.html">Life Coaching</a></li>
     			</ul>
   			</div>
 		</nav>
@@ -32,44 +31,49 @@
 	<div class="container-fluid">
 	  <div class="row">
 	    <div class="col-sm-8">
-			 <div class="well well-sm" style="background: linear-gradient(180deg,#87100c,#bc1610);">
-		   	<h2> Up to date articles!</h2>
-			</div>
+        <div class="panel-heading" style="background: linear-gradient(180deg,#87100c,#bc1610);"><h2 style="text-align:center;">User Login!</h2> </div>
+        <div class="panel panel-default" style="padding: 20px;">
+          <form action="/UserFormSubmission.php" method="put">
+            <div class="form-group">
+              <label for="name">Username</label>
+              <input type="uname" class="form-control" id="uname" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button> <br> <br>
+            <a href="./createaccount.php"><p>Create account...<p></a>
+          </form>
+        </div>
+			  <div class="well well-sm" style="background: linear-gradient(180deg,#87100c,#bc1610);">
+		   	  <h2> Up to date articles!</h2>
+			  </div>
 			  <article style="padding: 10px;">
-  				<p class=MsoNormal style='text-indent:.5in; display:inline;'>Let me start with a little blurb
-  				about myself. My name is Matthew; but you can call me Matt or Matteo. I was
-  				born and raised in the Pittsburgh area, but the things I am passionate about
-  				transcend geographic location. I love human development in all areas; whether
-  				that means psychological, emotional, or physical growth. I consider myself a
-  				conduit of passion and enthusiasm so that other people can learn, grow, and get
-  				better at whatever they choose to do because of me. That is my goal: to help people
-  				find their purpose, improve their life circumstances, and get the things that
-  				they want.</p>
+  				<p class=MsoNormal style='text-indent:.5in; display:inline;'> &nbsp Short Biography: My name is Matthew Mancino.
+          I am a 21 year old college student at the University of Pittsburgh. I am majoring in Computer Science and Psychology.
+          I really love reading, working out and lifting, meditation, and yoga, and reading about philosopy. Ever since I've first
+          experienced the difference a life-coach made in my life personally, I've always wanted to write a book, website, or general blog where people
+          can come learn things that they may have not had the opportunity to in their lifetime.</p>
 
-  				<p class=Normal style='text-indent:.5in'>For the past 3 and a half years
-  				I've been on a search essentially, a search that expanded myself and my
-  				horizons, but I also set out to discover more about myself. Mostly I�ve been an
-  				introverted person, but I forced myself way out of my comfort zone. I tried
-  				talking to more and more people and become more socially oriented. I used to be
-  				very shy and introverted in high-school, and yet as someone about to finish their
-  				senior year in my undergrad education, I cannot describe the mental/emotional
-  				transformation that I, as sure as many others have gone through once trying out
-  				new things. Myself, along with many others, have undergone a personal
-  				transformation of self-esteem, character, and personality that really can
-  				define who you are as a person, friend, worker, and lover.</p>
-  				</article>
+  				<p class=Normal style='text-indent:.5in'></p>
+  			</article>
+
 	    </div>
-		 <div class="col-sm-4" class="sidebar">
-			 <div class="panel panel-default">
-				 <div class="panel-heading" style="background: linear-gradient(180deg,#87100c,#bc1610);"><h2 style="text-align:center;">Get to know us!</h2> </div>
-				 <div class="panel-body">
-				  <h2 style="text-align: center; color: black;"> Coach Matteo</h2>
-   			  <img src="./images/matteoHeadshot.jpg" class="headshot" onclick="openLink()">
-   			  <h2 style="text-align: center; color: black;"> Coach Devon</h2>
-   				<img src="./images/devonheadshot.jpg" class="headshot" onclick="openLink()" id="devP">
-				 </div>
-			 </div>
-		 </div>
+		  <div class="col-sm-4" class="sidebar">
+			  <div class="panel panel-default">
+				  <div class="panel-heading" style="background: linear-gradient(180deg,#87100c,#bc1610);"><h2 style="text-align:center;">Get to know us!</h2> </div>
+				  <div class="panel-body">
+				    <h2 style="text-align: center;"> Matteo</h2>
+   			    <img src="./images/matteoHeadshot.jpg" class="headshot" onclick="openLink()">
+            <a href="./mattbio.html" style="font: black;"><p class="biography" style="background: linear-gradient(90deg,#e5e5e5,#c6c6c6);font: black;"> Biography </p></a>
+
+   			    <h2 style="text-align: center;"> Devon</h2>
+   				  <img src="./images/devonheadshot.jpg" class="headshot" onclick="openLink()" id="devP">
+            <a href="./devonbio.html"><p class="biography" style="background: linear-gradient(90deg,#e5e5e5,#c6c6c6);"> Biography </p><a>
+				  </div>
+			  </div>
+		  </div>
 	  </div>
   </div>
 

@@ -3,3 +3,7 @@ div.e-mail{
 	border: gray 2px solid;
 	padding: 10px;
 }
+div.border{
+
+	border: black 3px round;
+}
