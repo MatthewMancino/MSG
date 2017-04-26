@@ -1,0 +1,45 @@
+/* The header-footer file specifies information that all pages in the website use */
+
+@import "../bootstrap/css/bootstrap-theme.css";
+@import "../bootstrap/css/bootstrap-theme.css.map";
+@import "../bootstrap/css/bootstrap-theme.min.css";
+@import "../bootstrap/css/bootstrap-theme.min.css.map";
+@import "../bootstrap/css/bootstrap.css";
+@import "../bootstrap/css/bootstrap.css.map";
+@import "../bootstrap/css/bootstrap.min.css";
+@import "../bootstrap/css/bootstrap.min.css.map";
+
+footer.footer {
+
+background-color: #c6c6c6;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+width: 100%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+img.ancients{
+
+	max-width: 15%;
+	max-height: 15%;
+}
